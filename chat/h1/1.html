@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="/styleindex.css">
+  <meta charset="UTF-8">
+  <title>Support</title>
+  <meta http-equiv="Content-Type">
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1022.0" data-gr-ext-installed="">
+
+  <!-- nav -->
+
+  <div class="navbar">
+    <div class="container">
+      <a class="logo" href="/index.html">Ho<span>me</span></a>
+    </div>
+  </div>
+
+  <!-- nav -->
+
+  <!-- info -->
+  <div class="textinfo">
+    <p class="menus" id="info1"><span>DSK:</span><br>
+      Additional information:<br><br>
+      <a href="#">1. DKS instructions</a><br>
+      <a href="#">2. DKS instructions</a><br>
+    </p>
+
+  </div>
+
+  <div class="textinfo">
+    <p class="menus" id="info2"><span>MOB:</span><br>
+      Additional information:<br><br>
+      <a href="#">1. MOB instructions</a><br>
+      <a href="#">2. MOB instructions</a><br>
+    </p>
+
+  </div>
+
+  <div class="textinfo">
+    <p class="menus" id="info3"><span>AND:</span><br>
+      Additional information:<br><br>
+      <a href="#">1. AND instructions</a><br>
+      <a href="#">2. AND instructions</a><br>
+    </p>
+
+  </div>
+
+  <div class="textinfo">
+    <p class="menus" id="info4"><span>IOS:</span><br>
+      Additional information:<br><br>
+      <a href="#">1. IOS instructions</a><br>
+      <a href="#">2. IOS instructions</a><br>
+    </p>
+
+  </div>
+
+  <!-- info -->
+
+  <!-- text -->
+  <div class="textniz">
+    <textarea id="myInput1" class="one" name="myInput1" readonly>
+DSK Template EN
+DSK Template EN
+DSK Template EN</textarea>
+  </div>
+
+  <div class="textniz">
+    <textarea id="myInput2" class="two" name="myInput2" readonly>
+DSK Template GR
+DSK Template GR
+DSK Template GR</textarea>
+  </div>
+
+  <div class="textniz">
+    <textarea id="myInput3" class="three" name="myInput3" readonly>
+MOB Template EN
+MOB Template EN
+MOB Template EN</textarea>
+  </div>
+
+  <div class="textniz">
+    <textarea id="myInput4" class="four" name="myInput4" readonly>
+MOB Template GR
+MOB Template GR
+MOB Template GR</textarea>
+  </div>
+
+  <div class="textniz">
+    <textarea id="myInput5" class="five" name="myInput5" readonly>
+AND Template EN
+AND Template EN
+AND Template EN</textarea>
+  </div>
+
+  <div class="textniz">
+    <textarea id="myInput6" class="six" name="myInput6" readonly>
+AND Template GR
+AND Template GR
+AND Template GR</textarea>
+  </div>
+
+  <div class="textniz">
+    <textarea id="myInput7" class="seven" name="myInput7" readonly>
+IOS Template EN
+IOS Template EN
+IOS Template EN</textarea>
+  </div>
+
+  <div class="textniz">
+    <textarea id="myInput8" class="eight" name="myInput8" readonly>
+IOS Template GR
+IOS Template GR
+IOS Template GR</textarea>
+  </div>
+
+  <!-- text -->
+
+  <!-- scr -->
+
+  <!-- scr dsk -->
+  <div class="scrn" id="scrn">
+    <img src="d1.png" alt="" class="d1"></img>
+    <img src="d2.png" alt="" class="d2"></img>
+    <img src="d3.png" alt="" class="d3"></img>
+    <img src="d4.png" alt="" class="d4"></img>
+
+    <!-- scr mob -->
+    <img src="m1.png" alt="" class="m1"></img>
+    <img src="m2.png" alt="" class="m2"></img>
+    <img src="m3.png" alt="" class="m3"></img>
+    <img src="m4.png" alt="" class="m4"></img>
+
+    <!-- scr and-->
+    <img src="a1.png" alt="" class="a1"></img>
+    <img src="a2.png" alt="" class="a2"></img>
+    <img src="a3.png" alt="" class="a3"></img>
+    <img src="a4.png" alt="" class="a4"></img>
+
+    <!-- scr ios-->
+    <img src="i1.png" alt="" class="i1"></img>
+    <img src="i2.png" alt="" class="i2"></img>
+    <img src="i3.png" alt="" class="i3"></img>
+    <img src="i4.png" alt="" class="i4"></img>
+  </div>
+
+  <!-- scr -->
+
+  <!-- button -->
+
+  <button onclick="showscr1(1)" id="scron1" class="scron1"></button>
+  <button onclick="showscr2(2)" id="scron2" class="scron2"></button>
+  <button onclick="showscr3(3)" id="scron3" class="scron3"></button>
+  <button onclick="showscr4(3)" id="scron4" class="scron4"></button>
+
+  <button onclick="hidescr1()" class="scroff1"></button>
+  <button onclick="hidescr2()" class="scroff2"></button>
+  <button onclick="hidescr3()" class="scroff3"></button>
+  <button onclick="hidescr4()" class="scroff4"></button>
+
+  <button onclick="Copytextfunction(1)" id="menucopy1" class="menucopy1"></button>
+  <button onclick="Copytextfunction(2)" id="menucopy2" class="menucopy2"></button>
+  <button onclick="Copytextfunction(3)" id="menucopy3" class="menucopy3"></button>
+  <button onclick="Copytextfunction(4)" id="menucopy4" class="menucopy4"></button>
+  <button onclick="Copytextfunction(5)" id="menucopy5" class="menucopy5"></button>
+  <button onclick="Copytextfunction(6)" id="menucopy6" class="menucopy6"></button>
+  <button onclick="Copytextfunction(7)" id="menucopy7" class="menucopy7"></button>
+  <button onclick="Copytextfunction(8)" id="menucopy8" class="menucopy8"></button>
+  </div>
+
+  <!-- button -->
+
+  <!-- script -->
+
+  <script>
+    // Get textarea from url parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    let textarea = urlParams.get('textarea')
+
+    function show(textarea) {
+      for (let check = 1; check <= 8; check++) {
+        document.getElementById('myInput' + check).style.display = "none";
+        document.getElementById('menucopy' + check).style.display = "none";
+      }
+      document.getElementById('myInput' + textarea).style.display = "block";
+      document.getElementById('menucopy' + textarea).style.display = "block";
+    }
+
+    let p = urlParams.get('p')
+
+    function show1(p) {
+      for (let check = 1; check <= 4; check++) {
+        document.getElementById('info' + check).style.display = "none";
+        document.getElementById('info' + check).style.display = "none";
+      }
+      document.getElementById('info' + p).style.display = "block";
+      document.getElementById('info' + p).style.display = "block";
+    }
+
+
+    let button = urlParams.get('button')
+
+    function show2(button) {
+      for (let check = 1; check <= 4; check++) {
+        document.getElementById('scron' + check).style.display = "none";
+        document.getElementById('scron' + check).style.display = "none";
+      }
+      document.getElementById('scron' + button).style.display = "block";
+      document.getElementById('scron' + button).style.display = "block";
+    }
+
+
+    function Copytextfunction(textarea) {
+      var value = document.getElementById('myInput' + textarea).value;
+      var copyText = document.createElement("textarea");
+      copyText.value = value;
+      copyText.style.position = "fixed";
+      copyText.style.top = "-1000vh";
+      document.body.append(copyText);
+      copyText.select();
+      copyText.setSelectionRange(0, 99999)
+      document.execCommand("copy");
+      console.log(value);
+      copyText.remove();
+    }
+
+    function showscr1() {
+      document.querySelector('img.d1').style.display = "block"
+      document.querySelector('img.d2').style.display = "block"
+      document.querySelector('img.d3').style.display = "block"
+      document.querySelector('img.d4').style.display = "block"
+      document.querySelector('button.scron1').style.display = "none"
+      document.querySelector('button.scroff1').style.display = "block"
+    }
+
+    function showscr2() {
+      document.querySelector('img.m1').style.display = "block"
+      document.querySelector('img.m2').style.display = "block"
+      document.querySelector('img.m3').style.display = "block"
+      document.querySelector('img.m4').style.display = "block"
+      document.querySelector('button.scron2').style.display = "none"
+      document.querySelector('button.scroff2').style.display = "block"
+    }
+
+    function showscr3() {
+      document.querySelector('img.a1').style.display = "block"
+      document.querySelector('img.a2').style.display = "block"
+      document.querySelector('img.a3').style.display = "block"
+      document.querySelector('img.a4').style.display = "block"
+      document.querySelector('button.scron3').style.display = "none"
+      document.querySelector('button.scroff3').style.display = "block"
+    }
+
+    function showscr4() {
+      document.querySelector('img.i1').style.display = "block"
+      document.querySelector('img.i2').style.display = "block"
+      document.querySelector('img.i3').style.display = "block"
+      document.querySelector('img.i4').style.display = "block"
+      document.querySelector('button.scron4').style.display = "none"
+      document.querySelector('button.scroff4').style.display = "block"
+    }
+
+
+    function hidescr1() {
+      document.querySelector('img.d1').style.display = "none"
+      document.querySelector('img.d2').style.display = "none"
+      document.querySelector('img.d3').style.display = "none"
+      document.querySelector('img.d4').style.display = "none"
+      document.querySelector('button.scron1').style.display = "block"
+      document.querySelector('button.scroff1').style.display = "none"
+    }
+
+    function hidescr2() {
+      document.querySelector('img.m1').style.display = "none"
+      document.querySelector('img.m2').style.display = "none"
+      document.querySelector('img.m3').style.display = "none"
+      document.querySelector('img.m4').style.display = "none"
+      document.querySelector('button.scron2').style.display = "block"
+      document.querySelector('button.scroff2').style.display = "none"
+    }
+
+    function hidescr3() {
+      document.querySelector('img.a1').style.display = "none"
+      document.querySelector('img.a2').style.display = "none"
+      document.querySelector('img.a3').style.display = "none"
+      document.querySelector('img.a4').style.display = "none"
+      document.querySelector('button.scron3').style.display = "block"
+      document.querySelector('button.scroff3').style.display = "none"
+    }
+
+    function hidescr4() {
+      document.querySelector('img.i1').style.display = "none"
+      document.querySelector('img.i2').style.display = "none"
+      document.querySelector('img.i3').style.display = "none"
+      document.querySelector('img.i4').style.display = "none"
+      document.querySelector('button.scron4').style.display = "block"
+      document.querySelector('button.scroff4').style.display = "none"
+    }
+
+
+
+    // Run the hide function with the textarea number from parameters
+    if (textarea) {
+      show(textarea);
+    }
+
+    if (p) {
+      show1(p);
+    }
+
+    if (button) {
+      show2(button);
+    }
+  </script>
+
+  <!-- script -->
+</body>
